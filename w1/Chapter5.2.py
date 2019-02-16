@@ -18,15 +18,16 @@ converts them to integers, and uses check_fermat to check
 whether they violate Fermat’s theorem.    """
 
 def check_fermat(a,b,c,n):
-    a = int(input('Enter a positive number a:'))
-    b = int(input('Enter a positive number b:'))
-    c = int(input('Enter a positive number c:'))
-    n = int(input('Enter a positive number n:'))
     if n > 2:
-        if a*n + b*n == c*n:
+        if a ** n + b ** n == c ** n:
             print('Holy smokes, Fermat was wrong!')
         else:
             print('That doesn\'t work.')
     else:
         print('That doesn\'t work.')
     return
+a = int(input('Enter a positive number a:'))
+b = int(input('Enter a positive number b:'))
+c = int(input('Enter a positive number c:'))
+n = int(input('Enter a positive number n:'))
+check_fermat(a,b,c,n)
