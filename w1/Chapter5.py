@@ -29,3 +29,4 @@ def check_fermat(a,b,c,n):
             print('That doesn\'t work.')
     else:
         print('That doesn\'t work.')
+    return
