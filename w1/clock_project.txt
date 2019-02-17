@@ -1,0 +1,31 @@
+Arduino
+
+Alarm clock
+
+1. Current time
+2. Alarm time
+3. Sound/Vibrate
+4. Turn on/off alarm
+5. Calculate time until alarm
+
+1. Current time:
+    a. Auto
+    b. Manual
+    c. Get time in conform time unit(*)
+
+2. Alarm time:
+    a. Manual input
+    b. Translate user input to conform time unit
+
+3. Sound/Vibrate:
+    a. API between arduino and sound/vibration device
+
+4. Turn on/off alarm:
+    a. API between arduino and user (User Interface) - interupt
+
+5. Calculate time until alarm:
+    a. Take user input time - current time
+
+# The Unix epoch (or Unix time or POSIX time or Unix timestamp) 
+# is the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT), 
+# not counting leap seconds (in ISO 8601: 1970-01-01T00:00:00Z) 

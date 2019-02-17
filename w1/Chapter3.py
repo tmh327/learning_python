@@ -61,11 +61,23 @@ do_four(print_twice,'spam')
 + - - - - + - - - - +
 """
 def printpic():
+    plus = "+"
+    dash = "-"
+    space = " "
+    print((plus + space + (dash + space)*4)*2 + plus)
     print('+ ','- '*4,'+ ','- '*4,'+',sep='')
     print('| ','  '*4,'| ','  '*4,'|',sep='')
     print('| ','  '*4,'| ','  '*4,'|',sep='')
     print('| ','  '*4,'| ','  '*4,'|',sep='')
     print('| ','  '*4,'| ','  '*4,'|',sep='')
-do_twice(printpic)
-print('+ ','- '*4,'+ ','- '*4,'+',sep='')
+
+def main():
+    do_twice(printpic)
+    print('+ ','- '*4,'+ ','- '*4,'+',sep='')
+
+
+if __name__ == '__main__':
+    main()
+
+
 
