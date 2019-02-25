@@ -42,9 +42,9 @@ def do_twice2():
     print_twice('spam')
 
 '''exercise 4.5'''
-def do_four(f,g):
-    do_twice1(f,g)
-    do_twice1(f,g)
+def do_four(h,k):
+    do_twice1(h,k)
+    do_twice1(h,k)
 do_four(print_twice,'spam')
 
 """exercise 5.1
