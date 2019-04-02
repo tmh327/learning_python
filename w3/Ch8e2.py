@@ -3,6 +3,6 @@ prefix = 'JKLMNOPQ'
 suffix = 'ack'
 for letter in prefix:
     if letter in "OQ":
-        print (prefix + 'u' + suffix)
-    print(prefix+suffix)
+        print (letter + 'u' + suffix)
+    print(letter + suffix)
 
