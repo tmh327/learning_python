@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
-def find(word,letter,start):
-    while start < len(word):
-        if word[start] == letter:
-            return start    
+def count(string,letter,start):
+    c = 0 
+    while start < len(string):
+        if string[start] == letter:
+            c += 1 
         else:
-            start += 1
-    return -1     
-
-
-
-def count(string,letter):
-    start, count = 0,0   
-    while find(string,letter,start) != -1:
-        count += 1
-        start = find(string,letter,start)+1
-    return count
+            c = c
+        start += 1   
+    return print(c)
         
-print(count('banana','a')) 
+count('hubbub','b',3)
