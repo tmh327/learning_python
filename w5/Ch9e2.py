@@ -5,11 +5,11 @@ def has_no_e(word):
     else:
         return True
 
-fin = open('words.txt')
+find = open('words.txt','r')
 print(type(fin))
 wordcount = 0
 wordhasnoe = 0
-for line in fin:
+for line in find:
     wordcount += 1
     word = line.strip()
     if has_no_e(word):
