@@ -1,25 +1,28 @@
 #!/usr/bin/env python3
 def check(num):
     x = len(num)-1
-    print(x)
     count = 0
-    for i in range(len(num)):
-        print(i)
+    for i in range(len(num)-1):
+        print(i,x)
         if num[i] == num[x]:
-            print(num[i])
-            print(num[x])
+            print (num[i],num[x])
             x -= 1
             count += 1
-            print('good')
+            if num[i+1] != num[x]:
+                print(num[i],num[x])
+                return False     
+            if i == x:
+                break
         else:
             count = 0
-    print(count)
-    #if count >= 2:
-     #   return True
-    #else: 
-     #   return False
-check('912421')
-#for i in range(100000,1000000):
- #   if check(str(i)):
-  #      print(i)
+    if count >= 2:
+        return True
+    else:
+        return False
+
+print(check('121121'))
+print(check('123231'))
+for i in range(100000,1000000):
+    if check(str(i)):
+        print(i)
     
